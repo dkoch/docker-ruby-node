@@ -1,22 +1,10 @@
-FROM mhart/alpine-node:8
+FROM dieterkoch/ruby-node:2.4.4-alpine
 MAINTAINER Dieter Koch <dk@dkoch.org>
 
-# Install Ruby and additional packages required to install gems.
+# Install additional packages required to install gems.
 RUN apk update && \
   apk upgrade && \
   apk --update add \
-    ruby=2.4.4-r0 \
-    ruby-bigdecimal \
-    ruby-bundler \
-    ruby-io-console \
-    ruby-irb \
-    ruby-json \
-    ruby-rake \
-    libstdc++ \
-    libpq \
-    libxslt \
-    tzdata \
-    ca-certificates \
     build-base \
     git \
     libc-dev \
