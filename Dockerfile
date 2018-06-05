@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:base-8
+FROM node:8-alpine
 MAINTAINER Dieter Koch <dk@dkoch.org>
 
 # Install Ruby and additional packages required to install gems.
