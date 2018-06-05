@@ -14,7 +14,8 @@ RUN apk update && \
     linux-headers \
     libressl-dev \
     postgresql-dev \
-    ruby-dev
+    ruby-dev \
+    yarn
 
 # Configure gem and bundler
 RUN echo 'gem: --no-document' > /etc/gemrc && \
