@@ -1,19 +1,23 @@
-FROM node:8-alpine
+FROM alpine:3.7
 MAINTAINER Dieter Koch <dk@dkoch.org>
+
+ENV RUBY_VERSION 2.4.4-r0
+ENV NODEJS_VERSION 8.9.3-r1
 
 # Install Ruby and additional packages required to install gems.
 RUN apk update && \
   apk upgrade && \
   apk --update add \
-    ruby=2.4.4-r0 \
+    ca-certificates \
+    libstdc++ \
+    libpq \
+    libxslt \
+    "nodejs=${NODEJS_VERSION}" \
+    "ruby=${RUBY_VERSION}" \
     ruby-bigdecimal \
     ruby-bundler \
     ruby-io-console \
     ruby-irb \
     ruby-json \
     ruby-rake \
-    libstdc++ \
-    libpq \
-    libxslt \
     tzdata \
-    ca-certificates
