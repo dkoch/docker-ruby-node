@@ -18,5 +18,4 @@ RUN apk update && \
     yarn
 
 # Configure gem and bundler
-RUN echo 'gem: --no-document' > /etc/gemrc && \
-  bundle config build.nokogiri --use-system-libraries
+RUN echo 'gem: --no-document' > /etc/gemrc
