@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Dieter Koch <dk@dkoch.org>
 
-ENV RUBY_VERSION 2.4.4-r0
+ENV RUBY_VERSION 2.4.6-r0
 ENV NODEJS_VERSION 8.9.3-r1
 
 # Install Ruby and additional packages required to install gems.
