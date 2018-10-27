@@ -21,3 +21,4 @@ RUN apk update && \
     ruby-json \
     ruby-rake \
     tzdata \
+  && rm -rf /var/cache/apk/*
