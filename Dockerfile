@@ -10,6 +10,7 @@ RUN apk update && \
   apk --update add \
     ca-certificates \
     libstdc++ \
+    less \
     libpq \
     libxslt \
     "nodejs=${NODEJS_VERSION}" \
