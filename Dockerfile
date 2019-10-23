@@ -1,4 +1,4 @@
-FROM dieterkoch/ruby-node:2.5.5-alpine
+FROM dieterkoch/ruby-node:2.5.7-alpine
 MAINTAINER Dieter Koch <dk@dkoch.org>
 
 # Install Ruby and additional packages required to install gems.
