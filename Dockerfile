@@ -1,8 +1,8 @@
-FROM alpine:3.8
+FROM alpine:3.10
 MAINTAINER Dieter Koch <dk@dkoch.org>
 
-ENV RUBY_VERSION 2.5.5-r0
-ENV NODEJS_VERSION 8.14.0-r0
+ENV RUBY_VERSION 2.5.7-r0
+ENV NODEJS_VERSION 10.16.3-r0
 
 # Install Ruby and additional packages required to install gems.
 RUN apk update && \
