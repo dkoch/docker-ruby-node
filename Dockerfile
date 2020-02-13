@@ -4,7 +4,7 @@ MAINTAINER Dieter Koch <dk@dkoch.org>
 # Install Ruby and additional packages required to install gems.
 RUN apk update && \
   apk upgrade && \
-  apk --update add \
+  apk --update --no-cache add \
     libc6-compat \
     imagemagick \
     p7zip \
