@@ -7,7 +7,7 @@ ENV NODEJS_VERSION 12.15.0-r1
 # Install Ruby and additional packages required to install gems.
 RUN apk update && \
   apk upgrade && \
-  apk --update add \
+  apk --update --no-cache add \
     ca-certificates \
     libstdc++ \
     less \
