@@ -4,7 +4,7 @@ MAINTAINER Dieter Koch <dk@dkoch.org>
 # Install additional packages required to install gems.
 RUN apk update && \
   apk upgrade && \
-  apk --update add \
+  apk --update --no-cache add \
     build-base \
     git \
     libc-dev \
