@@ -1,4 +1,4 @@
-FROM dieterkoch/ruby-node:2.6.5-slim
+FROM dieterkoch/ruby-node:2.6.6-slim
 LABEL maintainer="Dieter Koch <dk@dkoch.org>"
 
 RUN apt-get update \
