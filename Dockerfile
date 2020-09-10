@@ -4,7 +4,9 @@ LABEL maintainer="Dieter Koch <dk@dkoch.org>"
 RUN gem install bundler
 
 RUN apt-get update \
-    && apt-get install -y \
-    curl \
-    libpq-dev \
-    && apt-get clean
+    && apt-get install --no-install-recommends -yqq \
+      curl \
+      gnupg \
+      libpq-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
